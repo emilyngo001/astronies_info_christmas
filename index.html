@@ -1,102 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astronaut Gallery</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f8ff;
-      color: #333;
-    }
-    .header {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(135deg, #0b3d91, #1e90ff);
-      color: white;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-    .card h2 {
-      margin: 0.5rem 0;
-      font-size: 1.5rem;
-    }
-    .card p {
-      padding: 0 1rem 1rem;
-      font-size: 1rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut Gallery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px white;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Welcome to the Astronaut Gallery</h1>
-    <p>Discover the unique personalities of our playful space explorers!</p>
-  </div>
-  <div class="gallery">
-    <!-- Peekronaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/peekronaunt_sitronaut.webp" alt="Peekronaut">
-      <h2>Peekronaut</h2>
-      <p>Curious and playful, Peekronaut loves hiding and peeking out to surprise its friends.</p>
+    <h1>Astronaut Gallery</h1>
+    <div class="gallery">
+        <div class="section">
+            <h2>Peekronaut</h2>
+            <img src="/mnt/data/peekronaunt_sitronaut.webp" alt="Peekronaut">
+            <p>Curious and playful, Peekronaut loves hiding and peeking out to surprise its friends.</p>
+        </div>
+        <div class="section">
+            <h2>Sitronaut</h2>
+            <img src="/mnt/data/peekronaunt_sitronaut.webp" alt="Sitronaut">
+            <p>Always taking a break, Sitronaut enjoys perching on edges, watching the cosmos pass by.</p>
+        </div>
+        <div class="section">
+            <h2>Scoutronaut</h2>
+            <img src="/mnt/data/scoutronaut_hideonaut.webp" alt="Scoutronaut">
+            <p>The explorer of the group, Scoutronaut gazes into the distance, always on the lookout for the next adventure.</p>
+        </div>
+        <div class="section">
+            <h2>Hideonaut</h2>
+            <img src="/mnt/data/scoutronaut_hideonaut.webp" alt="Hideonaut">
+            <p>The shy one, Hideonaut often stays tucked behind objects, quietly observing its surroundings.</p>
+        </div>
+        <div class="section">
+            <h2>Starronaut</h2>
+            <img src="/mnt/data/starronaunt_wavronaut.webp" alt="Starronaut">
+            <p>A quiet thinker, Starronaut stands still, gazing at the sky and admiring the vastness of space.</p>
+        </div>
+        <div class="section">
+            <h2>Wavronaut</h2>
+            <img src="/mnt/data/starronaunt_wavronaut.webp" alt="Wavronaut">
+            <p>Full of enthusiasm, Wavronaut is ready to greet anyone with a cheerful wave.</p>
+        </div>
     </div>
-
-    <!-- Sitronaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/peekronaunt_sitronaut.webp" alt="Sitronaut">
-      <h2>Sitronaut</h2>
-      <p>Always taking a break, Sitronaut enjoys perching on edges, watching the cosmos pass by.</p>
-    </div>
-
-    <!-- Scoutronaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/scoutronaut_hideonaut.webp" alt="Scoutronaut">
-      <h2>Scoutronaut</h2>
-      <p>The explorer of the group, Scoutronaut gazes into the distance, always on the lookout for the next adventure.</p>
-    </div>
-
-    <!-- Hideonaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/scoutronaut_hideonaut.webp" alt="Hideonaut">
-      <h2>Hideonaut</h2>
-      <p>The shy one, Hideonaut often stays tucked behind objects, quietly observing its surroundings.</p>
-    </div>
-
-    <!-- Starronaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/starronaunt_wavronaut.webp" alt="Starronaut">
-      <h2>Starronaut</h2>
-      <p>A quiet thinker, Starronaut stands still, gazing at the sky and admiring the vastness of space.</p>
-    </div>
-
-    <!-- Wavronaut -->
-    <div class="card">
-      <img src="PATH_TO_YOUR_IMAGE/starronaunt_wavronaut.webp" alt="Wavronaut">
-      <h2>Wavronaut</h2>
-      <p>Full of enthusiasm, Wavronaut is ready to greet anyone with a cheerful wave.</p>
-    </div>
-  </div>
 </body>
 </html>

@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTRONIES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #0b3d91, #1e90ff);
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+    }
+    .card p {
+      padding: 0 1rem 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to ASTRONIES!</h1>
-    <p>This is your GitHub Page for ASTRONIES.</p>
+  <div class="header">
+    <h1>Welcome to the Astronaut Gallery</h1>
+    <p>Discover the unique personalities of our playful space explorers!</p>
+  </div>
+  <div class="gallery">
+    <!-- Peekronaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/peekronaunt_sitronaut.webp" alt="Peekronaut">
+      <h2>Peekronaut</h2>
+      <p>Curious and playful, Peekronaut loves hiding and peeking out to surprise its friends.</p>
+    </div>
+
+    <!-- Sitronaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/peekronaunt_sitronaut.webp" alt="Sitronaut">
+      <h2>Sitronaut</h2>
+      <p>Always taking a break, Sitronaut enjoys perching on edges, watching the cosmos pass by.</p>
+    </div>
+
+    <!-- Scoutronaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/scoutronaut_hideonaut.webp" alt="Scoutronaut">
+      <h2>Scoutronaut</h2>
+      <p>The explorer of the group, Scoutronaut gazes into the distance, always on the lookout for the next adventure.</p>
+    </div>
+
+    <!-- Hideonaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/scoutronaut_hideonaut.webp" alt="Hideonaut">
+      <h2>Hideonaut</h2>
+      <p>The shy one, Hideonaut often stays tucked behind objects, quietly observing its surroundings.</p>
+    </div>
+
+    <!-- Starronaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/starronaunt_wavronaut.webp" alt="Starronaut">
+      <h2>Starronaut</h2>
+      <p>A quiet thinker, Starronaut stands still, gazing at the sky and admiring the vastness of space.</p>
+    </div>
+
+    <!-- Wavronaut -->
+    <div class="card">
+      <img src="PATH_TO_YOUR_IMAGE/starronaunt_wavronaut.webp" alt="Wavronaut">
+      <h2>Wavronaut</h2>
+      <p>Full of enthusiasm, Wavronaut is ready to greet anyone with a cheerful wave.</p>
+    </div>
+  </div>
 </body>
 </html>
